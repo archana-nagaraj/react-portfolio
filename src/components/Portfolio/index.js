@@ -41,7 +41,7 @@ function Portfolio() {
     }
   ]
   return (
-    <section id="project-section" style={{display: "flex", justifyContent: "space-between", flexWrap: "wrap"}}>
+    <section id="project-section" style={{display: "flex", justifyContent: "space-evenly", flexWrap: "wrap"}}>
       {projectItems.map((project) => {
         return <Project title={project.title} image={project.image} deployedLink={project.deployedLink} repo={project.repo} key={project.title} />
       })}

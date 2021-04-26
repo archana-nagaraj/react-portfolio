@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub} from '@fortawesome/free-brands-svg-icons'
 
 function Project({ title, image, deployedLink, repo }) {
   return (
@@ -10,15 +12,18 @@ function Project({ title, image, deployedLink, repo }) {
         alignItems: "center",
       }}
     >
-      <h3>{title}</h3>
+      <h3>
+      <a href={deployedLink}>
+      {title}
+      <a href={repo} className="icon"><FontAwesomeIcon icon={faGithub}/></a>
+       </a>
+      </h3>
       <img
         style={{ maxWidth: "300px", maxHeight: "600px" }}
         src={require(`../../assets/${image}`).default}
-        alt="budget"
-      ></img>
-
-      <a href={deployedLink}style={{color: "rgba(0, 0, 0, 0.5" }}>Deployed Here</a>
-      <a href={repo} style={{marginBottom: "15px", color: "rgba(0, 0, 0, 0.5" }}>Github Repo</a>
+        alt="budget">
+        </img>
+        
     </div>
   );
 }

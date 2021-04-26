@@ -51,7 +51,7 @@ h4,
 h5,
 h6 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 500;
+  /* font-weight: 500; */
   margin: 5px 0;
   line-height: 1.25;
   font-style: italic;
@@ -66,7 +66,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 h4 {
