@@ -6,7 +6,7 @@ import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
 function Footer() {
   return (
     <footer>
-      <ul className="icons" style={{display: "flex", justifyContent: "center"}}>
+      <ul className="icons" style={{display: "flex", justifyContent: "center", background: "#f1c40f", color: "rgba(0, 0, 0, 0.5"}}>
         <li>
           <a
             href="https://www.linkedin.com/in/archana-nagaraja/"
