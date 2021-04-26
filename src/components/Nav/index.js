@@ -4,11 +4,6 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 function Nav(props) {
   const { tabs = [], setCurrentTab, currentTab } = props;
 
-  // const handleClick = (item) => {
-  //   console.log(item);
-  //   return item;
-  // };
-
   return (
     <nav>
       <ul className="flex-row">
