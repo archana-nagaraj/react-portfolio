@@ -5,7 +5,7 @@ main {
 }
 :root {
   --primary: #5f627d;
-  --secondary: #c0fdfb;
+  --secondary: #EF6F6C;
   --tertiary: #b12704;
   --light: #fafafa;
   --dark: #1b1b1b;
@@ -97,7 +97,7 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background: var(--light);
 }
 
 header a {

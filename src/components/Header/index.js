@@ -5,7 +5,7 @@ function Header(props) {
   return (
     <header className="flex-row px-1" style={{display: "flex", justifyContent: "space-between"}}>
       <h2>
-        <a data-testid="link" href="/" style={{background: "none"}}>
+        <a data-testid="link" href="/" style={{background: "none", color: "#000000"}}>
           Archana Nagaraja
         </a>
       </h2>
