@@ -39,7 +39,7 @@ body {
   background: var(--dark);
   color: var(--light);
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url('./assets/coverImage.jpeg');
+  background-image: url('./assets/backgroundimage.jpg');
 }
 
 h1,
