@@ -2,17 +2,18 @@ import React from "react";
 import ResumeDownload from "../../assets/Archana_Nagaraja_Resume.pdf";
 
 function Resume({ tabs }) {
-  const skills1 = [
+  const frontend = [
     "HTML",
     "CSS",
-    "Bootstrap",
     "JavaScript",
+    "jQuery",
+    "Bootstrap"
+  ];
+  const backend = [
     "jQuery",
     "Node.js",
     "Express.js",
     "SQL",
-  ];
-  const skills2 = [
     "Sequelize",
     "MySQL",
     "MYSQL2",
@@ -21,7 +22,7 @@ function Resume({ tabs }) {
     "Mongoose",
     "Jest",
     "TDD",
-    "React",
+    "React"
   ];
 
   return (
@@ -36,9 +37,9 @@ function Resume({ tabs }) {
         }}
       >
         <img
-          src={require(`../../assets/Resume-Screenshot.jpg`).default}
+          src={require(`../../assets/resume_Snapshot.png`).default}
           alt="resume"
-          style={{ width: "200px" }}
+          style={{ width: "300px" }}
         />
         <br />
         <a
@@ -52,19 +53,25 @@ function Resume({ tabs }) {
       </div>
 
       <div>
-        <h2 style={{paddingLeft: "20%"}}>Skills</h2>
+        <h1>Technologies</h1>
         <div style= {{display: "flex"}}>
-          <ul style={{marginLeft: "0px", paddingLeft: "0px"}}>
-            {skills1.map((skills) => (
+        <div>
+        <h2>Front-End</h2>
+          <ul>
+            {frontend.map((skills) => (
               <li>{skills}</li>
             ))}
           </ul>
+          </div>
+          <div>
+          <h2>Back-End</h2>
           <ul>
-            {skills2.map((skills) => (
+            {backend.map((skills) => (
               <li>{skills}</li>
             ))}
           </ul>
         </div>
+        </div>  
       </div>
     </div>
     </div>
