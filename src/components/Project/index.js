@@ -17,8 +17,8 @@ function Project({ title, image, deployedLink, repo }) {
         alt="budget"
       ></img>
 
-      <a href={deployedLink}>Application Link</a>
-      <a href={repo} style={{marginBottom: "15px",}}>Github Repo Link</a>
+      <a href={deployedLink}>Deployed Here</a>
+      <a href={repo} style={{marginBottom: "15px",}}>Github Repo</a>
     </div>
   );
 }
